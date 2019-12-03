@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>SMK Negeri 1 Karang Baru</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Operasi Aritmatika">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width = device-width, initial-scale = 1">
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="theme-color" content="#e62e2e">
+</head>
+
+<body>
+	<!--NAVIGASI-->
+	<nav class="light-green accent-4" role="navigation">
+		<div class="nav-wrapper container">
+			<a href="#home" class="logo brand-logo" id="logo-container"><img src="/ilkom192.png" width="50px"></a>
+			<a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
+
+			<ul class="topnav right hide-on-med-and-down"></ul>
+			<ul class="sidenav" id="nav-mobile"></ul>
+		</div>
+	</nav>
+	</div>
+	<!--Akhir Navigasi-->
+
+	<!-- slider -->
+
+	<div class="slider">
+		<ul class="slides">
+			<li>
+				<img src="img/4.jpg"> <!-- random image -->
+				<div class="caption center-align">
+					<h3>Welcome to Ilkom 19B</h3>
+					<h5 class="light grey-text text-lighten-3">can one can all</h5>
+				</div>
+			</li>
+			<li>
+				<img src="img/5.jpg"> <!-- random image -->
+				<div class="caption left-align">
+					<h3>Welcome to Ilkom 19B</h3>
+					<h5 class="light grey-text text-lighten-3">Solid yang tak hingga</h5>
+				</div>
+			</li>
+			<li>
+				<img src="img/6.jpg"> <!--  -->
+				<div class="caption right-align">
+					<h3>Welcome to Ilkom 19B</h3>
+					<h5 class="light grey-text text-lighten-3">Buat impian jadi nyata</h5>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<!-- akhir slider -->
+
+	<div class="container" id="body-content"></div>
+
+	<footer class="page-footer grey darken-4" id="footer">
+	</footer>
+	<script src="js/materialize.min.js"></script>
+	<script src="js/nav.js"></script>
+	<script type="text/javascript">
+		//register Service Worker
+
+		if ("serviceWorker" in navigator) {
+			window.addEventListener("load", function () {
+				navigator.serviceWorker
+					.register("/service-worker.js")
+					.then(function () {
+						console.log("Pendaftaran serviceWorker Berhasil");
+					})
+					.catch(function () {
+						console.log("Pendaftaran service-worker gagal");
+					});
+			});
+		} else {
+			console.log("Browser belum mendukung service-worker");
+		}
+
+		// javaScript Slider
+
+		const slider = document.querySelectorAll('.slider');
+		M.Slider.init(slider, {
+			indicator: false,
+			height: 500,
+		});
+
+		
+	</script>
+</body>
+
+</html>

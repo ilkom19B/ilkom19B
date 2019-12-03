@@ -1,0 +1,17 @@
+{
+	"name": "SMKN 1 Karang Baru",
+    "short_name": "SMKN 1 KB",
+    "description": "Aplikasi PWA SMKN 1 Karang Baru",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#e62e2e",
+    "theme_color": "#e62e2e",
+    "icons": [
+        {
+            "src": "ilkom512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+
+}
