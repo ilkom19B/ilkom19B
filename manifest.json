@@ -1,7 +1,8 @@
 {
-	"name": "Ilmu Komputer 2019 B",
-    "short_name": "Ilkom B",
-    "description": "Ilmu Komputer B ",
+
+	"name": "Ilmu Komputer 2019B",
+    "short_name": "Ilkom 19B",
+    "description": "Aplikasi PWA Ilmu Komputer 2019B",
     "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#e62e2e",
