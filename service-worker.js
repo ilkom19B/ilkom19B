@@ -1,4 +1,4 @@
-const CACHE_NAME = "pwa_1_v15";
+const CACHE_NAME = "pwa_1_v14";
 var urlsToCache = [
 	"/",
 	"/ilkom512.png",
