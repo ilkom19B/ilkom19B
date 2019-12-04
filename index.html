@@ -61,30 +61,49 @@
 			<h3 class="center green-text accent-2">About us</h3>
 			<div class="row">
 				<div class="col m6 s12 light">
-					<h4>Web Development</h4>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloribus, officiis nam temporibus
-						quas
-						beatae, dolores ab ut nisi exercitationem quae distinctio tenetur officia. Eaque vel nihil
-						impedit
-						ut sequi.</p>
+					<h4>Ilmu Komputer 2019B</h4>
+					<p>Kelas kami berisi orang yang sangat cerdah, kekompakan adalah sebuah hal yang kami nonjolkan,
+						soldaritas tinggi dan kerja sama yang baik </p>
 				</div>
 				<div class="col m6 s12 light">
-					<p>Web Developer</p>
+					<p>Men</p>
 					<div class="progress">
-						<div class="determinate" style="width: 30%"></div>
+						<div class="determinate" style="width: 55%"></div>
 					</div>
-					<p>Web Desainer</p>
+					<p>Women</p>
 					<div class="progress">
-						<div class="determinate" style="width: 75%"></div>
+						<div class="determinate" style="width: 45%"></div>
 					</div>
-					<p>Game Developer</p>
-					<div class="progress">
-						<div class="determinate" style="width: 25%"></div>
-					</div>
+
 				</div>
 			</div>
 	</section>
-
+	<!-- paralax -->
+	<div class="parallax-container scrollspy" id="clients">
+		<div class="parallax"><img src="img/1slider.jpg">
+		</div>
+		<div class="container clients ">
+			<h3 class="center green-text accent-2">Profile</h3>
+			<div class="row img-1 center">
+				<div class="col m4 s12">
+					<img src="">
+					<h5><a href="#">Mhd. Khaidar Aly <br> Wakil Komirsaris Kelas </a></h5>
+				</div>
+				<div class="col m4 s12">
+					<img src="">
+					<h5><a href="#">Jamrud Khatulistiwa<br>Komirsaris Kelas</a></h5>
+				</div>
+				<div class="col m4 s12">
+					<img src="">
+					<h5><a href="#">Muhammad Rifki Maulana <br> Bendahara Kelas</a></h5>
+				</div>
+			</div>
+			<div class="center">
+				<a href="" class="btn waves-effect waves-light light-green accent-4 center-align">Profile</a>
+			</div>
+		</div>
+	</div>
+	<!-- akhir paralax -->
 	<!-- akhir About us -->
 	<div class="container" id="body-content"></div>
 
@@ -117,6 +136,9 @@
 			indicator: false,
 			height: 500,
 		});
+
+		const parallax = document.querySelectorAll('.parallax');
+		M.Parallax.init(parallax);
 	</script>
 </body>
 
