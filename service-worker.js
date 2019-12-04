@@ -2,9 +2,6 @@ const CACHE_NAME = "pwa_1_v15";
 var urlsToCache = [
 	"/",
 	"/manifest.json",
-	"/img/album1.jpeg",
-	"/img/album2.jpeg",
-	"/img/album3.jpeg",
 	"/img/1.jpeg",
 	"/img/2.jpg",
 	"/img/3.jpg",
