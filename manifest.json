@@ -1,13 +1,12 @@
 {
-	"name": "Ilmu Komputer 2019B",
+    "name": "Ilmu Komputer 2019B",
     "short_name": "Ilkom 19B",
     "description": "Aplikasi PWA Ilmu Komputer 2019B",
     "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#e62e2e",
     "theme_color": "#e62e2e",
-    "icons": [
-        {
+    "icons": [{
             "src": "ilkom512.png",
             "sizes": "512x512",
             "type": "image/png"

@@ -1,4 +1,4 @@
-const CACHE_NAME = "pwa_39";
+const CACHE_NAME = "pwa_45";
 var urlsToCache = [
 	"/",
 	"/ilkom512.png",
@@ -13,13 +13,7 @@ var urlsToCache = [
 	"/img/8.jpeg",
 	"/img/7.jpg",
 	"/img/1slider.jpg",
-	"/nav.html",
 	"/index.html",
-	"/footer.html",
-	"/pages/home.html",
-	"/pages/gallery.html",
-	"/pages/news.html",
-	"/pages/profile.html",
 	"/css/materialize.min.css",
 	"/css/style.css",
 	"/js/materialize.min.js",

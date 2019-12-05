@@ -42,3 +42,7 @@
 a {
 	text-decoration: none !important;
 }
+
+.card-panel {
+	padding-top: 10px !important;
+}
