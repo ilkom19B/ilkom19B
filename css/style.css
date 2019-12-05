@@ -34,3 +34,11 @@
 .parallax-container {
 	height: 300px !important;
 }
+
+.brand-logo {
+	margin-top: 5px;
+}
+
+a {
+	text-decoration: none !important;
+}

@@ -8,23 +8,40 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta name="viewport" content="width = device-width, initial-scale = 1">
 	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="manifest" href="/manifest.json">
 	<meta name="theme-color" content="#e62e2e">
 </head>
 
 <body>
-	<!--NAVIGASI-->
-	<nav class="light-green accent-4" role="navigation">
-		<div class="nav-wrapper container">
-			<a href="#home" class="logo brand-logo" id="logo-container"><img src="/ilkom192.png" width="50px"></a>
-			<a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
 
-			<ul class="topnav right hide-on-med-and-down"></ul>
-			<ul class="sidenav" id="nav-mobile"></ul>
-		</div>
-	</nav>
+	<!-- navbar -->
+	<div class="navbar-fixed">
+		<nav class="green accent-3">
+			<div class="nav-wrapper">
+				<div class="container">
+					<a href="#home" class="brand-logo"><img width="50px" src="ilkom192.png" alt=""></a>
+					<a href="#" data-target="mobile-cmp" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+					<ul class="right hide-on-med-and-down">
+						<li><a href="#about">About us</a></li>
+						<li><a href="#profile">Profile</a></li>
+						<li><a href="#news">News</a></li>
+						<li><a href="#gallery">Gallery</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 	</div>
-	<!--Akhir Navigasi-->
+	<!-- akhir navbar -->
+	<!-- sidenav -->
+	<ul id="mobile-cmp" class="sidenav">
+		<li><a href="#about">About us</a></li>
+		<li><a href="#clients">Clients</a></li>
+		<li><a href="#services">Service</a></li>
+		<li><a href="#portofolio">Portofolio</a></li>
+		<li><a href="#contact">Contact</a></li>
+	</ul>
+	<!-- akhir sidenav -->
 
 	<!-- slider -->
 
@@ -61,9 +78,9 @@
 			<h3 class="center green-text accent-2">About us</h3>
 			<div class="row">
 				<div class="col m6 s12 light">
-					<h4>Ilmu Komputer 2019B</h4>
-					<p>Kelas kami berisi orang yang sangat cerdah, kekompakan adalah sebuah hal yang kami nonjolkan,
-						soldaritas tinggi dan kerja sama yang baik </p>
+					<h4>Ilmu Komputer 2019 B</h4>
+					<p>Our class consist of brilliant colleaguean, solidarity is a our main princip. </p>
+					<p class="quote">"High solidarity and good teamwork"</p>
 				</div>
 				<div class="col m6 s12 light">
 					<p>Men</p>
@@ -78,8 +95,9 @@
 				</div>
 			</div>
 	</section>
+	<!-- akhir About us -->
 	<!-- paralax -->
-	<div class="parallax-container scrollspy" id="clients">
+	<div class="parallax-container scrollspy" id="profile">
 		<div class="parallax"><img width="400px" src="img/1slider.jpg">
 		</div>
 		<div class="container clients ">
@@ -104,7 +122,141 @@
 		</div>
 	</div>
 	<!-- akhir paralax -->
-	<!-- akhir About us -->
+
+	<!-- News -->
+	<section class="news" id="news">
+		<div class="row">
+			<div class="col m4 s12">
+				<img src="" class="responsive-img card-panel">
+			</div>
+			<div class="col m4 s12">
+				<img src="" class="responsive-img card-panel">
+			</div>
+			<div class="col m4 s12">
+				<img src="" class="responsive-img card-panel">
+			</div>
+		</div>
+	</section>
+	<!-- News Akhir -->
+
+	<!-- gallery -->
+	<section class="portofolio scrollspy" id="gallery">
+		<div class="container ">
+			<h3 class="green-text accent-2 center">Gallery</h3>
+			<div class="row">
+				<div class="col m3 s12">
+					<img src="img/1.jpeg" alt="" class="responsive-img materialboxed">
+				</div>
+				<div class="col m3 s12">
+					<img src="img/2.jpg" alt="" class="responsive-img materialboxed">
+				</div>
+				<div class="col m3 s12">
+					<img src="img/8.jpeg" alt="" class="responsive-img materialboxed">
+				</div>
+				<div class="col m3 s12">
+					<img src="img/4.jpg" alt="" class="responsive-img materialboxed">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col m3 s12">
+					<img src="img/5.jpg" alt="" class="responsive-img materialboxed">
+				</div>
+				<div class="col m3 s12">
+					<img src="img/6.jpg" alt="" class="responsive-img materialboxed">
+				</div>
+				<div class="col m3 s12">
+					<img src="img/7.jpg" alt="" class="responsive-img materialboxed">
+				</div>
+				<div class="col m3 s12">
+					<img src="img/3.jpg" alt="" class="responsive-img materialboxed">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- gallery -->
+	<!-- contact -->
+	<section class="contact scrollspy" id="contact">
+		<div class="container">
+			<h3 class="center green-text accent-2">Contact Us</h3>
+			<div class="row">
+				<div class="col m5 s12">
+					<div class="card-panel white-text center green accent-3">
+						<i class="material-icons medium">email</i>
+						<h5>Contact</h5>
+						<p>for more questions, suggestions, criticisms and complaints <br>contact us</p>
+					</div>
+					<ul class="collection with-header">
+						<li class="collection-header center">
+							<h5>Address</h5>
+						</li>
+						<li class="collection-item">
+							<i class="material-icons tiny">home</i>
+							Universitas Negeri Medan <br>
+							Mathematic and Nature Science Faculty
+
+						<li class="collection-item"><i class="material-icons tiny">email</i>
+							ilkom19B@gmail.com</li>
+					</ul>
+				</div>
+				<div class="col m7 s12">
+					<form action="">
+						<div class="card-panel">
+							<h5>Please Fill out this form</h5>
+							<div class="input-field">
+								<i class="material-icons prefix">account_circle</i>
+								<input id="name" name="name" type="text" class="validate" required>
+								<label for="name">Name</label>
+							</div>
+							<div class="input-field">
+								<i class="material-icons prefix">email</i>
+								<input type="email" name="email" id="email" class="validate">
+								<label for="email">Email</label>
+							</div>
+							<div class="input-field">
+								<i class="material-icons prefix">phone</i>
+								<input type="text" id="phone" class="validate">
+								<label for="phone">Phone Number</label>
+							</div>
+							<div class="input-field">
+								<i class="material-icons prefix">mode_edit</i>
+								<textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+								<label for="icon_prefix2">Message</label>
+							</div>
+							<button data-target="modal1" class="btn modal-trigger green accent-3">Send</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- akhir contact -->
+
+	<section class="green accent-3">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Contact Us</h5>
+					<p class="white-text">
+						Program Study Ilmu Komputer<br>
+						Universitas Negeri Medan<br><br>
+						Email : ilkom19B@gmail.com
+					</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h5 class="white-text">Link Terkait</h5>
+					<ul>
+						<li><a class="grey-text text-lighten-3" href="https://unimed.ac.id">Unimed</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-copyright white-text">
+				<div>
+					<p>©copyright 2019 ilkom 19 B</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<div class="container" id="body-content"></div>
 
 	<footer class="page-footer grey darken-4" id="footer">
@@ -139,6 +291,14 @@
 
 		const parallax = document.querySelectorAll('.parallax');
 		M.Parallax.init(parallax);
+
+		const materialbox = document.querySelectorAll('.materialboxed');
+		M.Materialbox.init(materialbox);
+
+		const scroll = document.querySelectorAll('.scrollspy');
+		M.ScrollSpy.init(scroll, {
+			scrollOffset: 75
+		});
 	</script>
 </body>
 
