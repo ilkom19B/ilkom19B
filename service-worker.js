@@ -1,4 +1,4 @@
-const CACHE_NAME = "pwa_45";
+const CACHE_NAME = "pwa_46";
 var urlsToCache = [
 	"/",
 	"/ilkom512.png",
@@ -55,25 +55,25 @@ self.addEventListener("fetch", function (event) {
 });
 // akhir api
 
-self.addEventListener("fetch", function (event) {
-	event.respondWith(
-		caches
-		.match(event.request, {
-			cacheName: CACHE_NAME
-		})
-		.then(function (response) {
+// self.addEventListener("fetch", function (event) {
+// 	event.respondWith(
+// 		caches
+// 		.match(event.request, {
+// 			cacheName: CACHE_NAME
+// 		})
+// 		.then(function (response) {
 
-			if (response) {
-				console.log("ServiceWorker: Gunakan aset dari cache: ", response.url);
-				return response;
-			}
-			console.log(
-				"ServiceWorker: Memuat dari server: ", event.request.url
-			);
-			return fetch(event.request);
-		})
-	);
-});
+// 			if (response) {
+// 				console.log("ServiceWorker: Gunakan aset dari cache: ", response.url);
+// 				return response;
+// 			}
+// 			console.log(
+// 				"ServiceWorker: Memuat dari server: ", event.request.url
+// 			);
+// 			return fetch(event.request);
+// 		})
+// 	);
+// });
 
 self.addEventListener("activate", function (event) {
 	event.waitUntil(
